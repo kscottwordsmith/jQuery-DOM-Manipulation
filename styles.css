@@ -1,0 +1,40 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+.topper {
+	background: rgb(37,44,0);
+	width: 700px;
+	font-size: 25px;
+	border: 1px solid rgb(25,40,0);
+	color: #ccc;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+	display: inline-block;
+}
+
+.text {
+	width: 700px;
+	height: 0px;
+	border: 1px solid rgb(25,40,0);
+	padding: 0px;
+	transition: height 1s;
+	overflow:auto;
+}
+
+.topper, .text {
+	visibility: hidden;
+}
+
+.active {
+	height: 250px;
+	padding: 20px;
+}
