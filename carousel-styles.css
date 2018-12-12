@@ -1,0 +1,37 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+#backBtn {
+	height: 150px;
+	width: 50px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+#forwardBtn {
+	height: 150px;
+	width: 50px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+}
+
+.activeImg {
+	opacity: 1;
+}
